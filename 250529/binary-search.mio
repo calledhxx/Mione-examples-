@@ -16,7 +16,7 @@ set search = function
         newTable = cut (x,1,midIndex); //這裡的cut是形容符號，後面的括弧是先行運算式
         //若前項小於或等於搜尋值，則設置newTable為裁切過的x（裁切範圍為第1項至midIndex）
 
-         if(x[midIndex] == y) return midIndex;
+         if(x[midIndex] == y) then range return midIndex end;
          //若直接命中，不用懷疑立即返回
     end else range
 
