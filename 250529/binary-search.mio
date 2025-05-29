@@ -22,7 +22,7 @@ set search = function
 
         newTable = cut (x,midIndex+1,-1);
          //若前項小於搜尋值，則設置newTable為裁切過的x（裁切範圍為第midIndex+1項至-1，也就是尾端）
-        z+=midIndex+1; 
+        z+=midIndex; 
         //設定序為大於midIndex的最小自然數
     end
 
@@ -30,7 +30,7 @@ set search = function
 
     if (length newTable == 1) then range
          //若只剩下一項項目，則返回序計數之值
-         return z;
+         return z+1;
     end else range  
          //若還存在多項，則繼續進行搜尋並過濾
          return search(newTable,y,z);
