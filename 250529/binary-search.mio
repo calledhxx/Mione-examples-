@@ -29,8 +29,8 @@ set search = function
     //判斷newTable的子項是否「過濾」至一項項目
 
     if (length newTable == 1) then range
-         //若只剩下一項項目，則返回序計數之值
-         return z+1;
+         //若只剩下一項項目，則返回0，因上方最後匹配不符
+         return 0;
     end else range  
          //若還存在多項，則繼續進行搜尋並過濾
          return search(newTable,y,z);
